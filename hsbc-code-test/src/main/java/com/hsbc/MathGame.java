@@ -5,7 +5,6 @@ import java.util.function.Function;
 
 public class MathGame {
 
-
     /**
      * play games
      * @param args
@@ -19,8 +18,6 @@ public class MathGame {
         mathGame.playGame4();
     }
 
-
-
     /**
      * A number is FizzBuzz if is is divisable by 3 or 5 or has a 3 or 5 in it
      */
@@ -31,8 +28,6 @@ public class MathGame {
             }
             return x.toString();
         },System.out::print);
-
-
     }
 
     /**
@@ -59,12 +54,10 @@ public class MathGame {
         }, System.out::print);
     }
 
-
     /**
      * play game om math lesson
      */
     public void playGame() {
-
         play(100, x -> {
             if (checkDivisible(x, 3) && checkDivisible(x, 5)) {
                 return "FizzBuzz";
@@ -76,9 +69,7 @@ public class MathGame {
                 return x.toString();
             }
         }, System.out::printf);
-
     }
-
 
     /**
      * run game
@@ -126,12 +117,9 @@ public class MathGame {
             //if num is null,then recogenize as 0,whilch will be divided by any integer
             return true;
         }
-
         if (num % div == 0) {
             return false;
         }
         return false;
     }
-
-
 }
